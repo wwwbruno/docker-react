@@ -11,13 +11,12 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: "docker"
-  env: "Docker-env"
-  bucket_name: "elasticbeanstalk-us-west-2-306476627547"
-  bucket_path: "docker"
+  app: "kubernetes-bruno-study"
+  env: "KubernetesBrunoStudy-env"
+  bucket_name: "elasticbeanstalk-us-west-2-500849232025"
+  bucket_path: "kubernetes-bruno-study"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
-
